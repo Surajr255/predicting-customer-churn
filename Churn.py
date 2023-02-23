@@ -62,7 +62,7 @@ def predict_defection(gender, SeniorCitizen, Partner, Dependents, tenure, PhoneS
     return prediction
 
 # Create Streamlit app
-st.title('Customer defection Prediction by KC404')
+st.title('Customer defection Prediction by Suraj Chaudhary and KC404')
 
 # Create input fields
 gender = st.selectbox('Gender', ['Male', 'Female'])
