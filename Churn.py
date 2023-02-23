@@ -87,7 +87,7 @@ TotalCharges = st.number_input('Total Charges', min_value=0.0, max_value=100000.
 
 # Predict churn
 if st.button('Predict defection'):
-    prediction = predict_churn(gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService,
+    prediction = predict_defection(gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService,
                                MultipleLines, InternetService, OnlineSecurity, OnlineBackup, DeviceProtection,
                                TechSupport, StreamingTV, StreamingMovies, Contract, PaperlessBilling, PaymentMethod,
                                MonthlyCharges, TotalCharges)
