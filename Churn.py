@@ -62,7 +62,7 @@ def predict_churn(gender, SeniorCitizen, Partner, Dependents, tenure, PhoneServi
     return prediction
 
 # Create Streamlit app
-st.title('Telco Customer Churn Prediction')
+st.title('Customer defection Prediction by Suraj Chaudhary')
 
 # Create input fields
 gender = st.selectbox('Gender', ['Male', 'Female'])
@@ -94,7 +94,7 @@ if st.button('Predict Churn'):
     if prediction == 0:
         st.success('Customer is likely to stay.')
     else:
-        st.warning('Customer is likely to churn.')
+        st.warning('Customer is likely to defect.')
 
 # Display dataset
 if st.checkbox('Show dataset'):
