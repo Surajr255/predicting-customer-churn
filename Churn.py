@@ -38,7 +38,7 @@ model = RandomForestClassifier(n_estimators=100, random_state=42)
 model.fit(X, y)
 
 # Define function to predict customer churn
-def predict_churn(gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService,
+def predict_defection(gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService,
                   MultipleLines, InternetService, OnlineSecurity, OnlineBackup, DeviceProtection,
                   TechSupport, StreamingTV, StreamingMovies, Contract, PaperlessBilling, PaymentMethod,
                   MonthlyCharges, TotalCharges):
@@ -86,7 +86,7 @@ MonthlyCharges = st.number_input('Monthly Charges', min_value=0.0, max_value=100
 TotalCharges = st.number_input('Total Charges', min_value=0.0, max_value=100000.0, value=5000.0, step=1.0)
 
 # Predict churn
-if st.button('Predict Churn'):
+if st.button('Predict defection'):
     prediction = predict_churn(gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService,
                                MultipleLines, InternetService, OnlineSecurity, OnlineBackup, DeviceProtection,
                                TechSupport, StreamingTV, StreamingMovies, Contract, PaperlessBilling, PaymentMethod,
